@@ -6,11 +6,10 @@ export function WhyUs() {
     <Section id="mengapa-kami" className="border-t border-line">
       <Container>
         <SectionHeader
-          eyebrow="Mengapa Seger Waras"
-          title="Enam alasan klien kami memilih kami."
-          description="Kami tidak hanya mendesain ruangan — kami merancang pengalaman, dari konsultasi pertama hingga garansi purna jual."
+          eyebrow="Alasan Memilih Kami"
+          title="Mengapa mempercayakan proyek interior Anda kepada kami."
         />
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-12">
           {valueProps.map((v, i) => (
             <li key={v.id} className="flex flex-col">
               <div className="flex items-baseline gap-4 mb-4">
