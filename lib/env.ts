@@ -8,10 +8,10 @@ const envSchema = z.object({
   NEXT_PUBLIC_WHATSAPP_NUMBER: z
     .string()
     .min(8, "Nomor WhatsApp minimal 8 digit")
-    .default("6281234567890"),
+    .default("6285156265466"),
   NEXT_PUBLIC_WHATSAPP_DEFAULT_MESSAGE: z
     .string()
-    .default("Halo Seger Waras, saya tertarik dengan layanan desain interior."),
+    .default("Halo SWARAS Interior, saya tertarik dengan layanan pemasangan interior."),
   NEXT_PUBLIC_SUPABASE_URL: z.string().url().optional(),
   NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().optional(),
   SUPABASE_SERVICE_ROLE_KEY: z.string().optional(),

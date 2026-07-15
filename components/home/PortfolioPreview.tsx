@@ -10,7 +10,7 @@ export function PortfolioPreview() {
         <div className="flex items-end justify-between gap-6 mb-12 md:mb-16">
           <div className="max-w-2xl">
             <Eyebrow>Portofolio</Eyebrow>
-            <h2 className="mt-4 text-3xl md:text-5xl font-serif text-ink leading-[1.1] tracking-tight">
+            <h2 className="mt-4 text-3xl md:text-5xl font-sans text-ink leading-[1.1] tracking-tight">
               Beberapa ruangan yang pernah kami wujudkan.
             </h2>
           </div>

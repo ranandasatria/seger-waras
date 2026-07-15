@@ -68,7 +68,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 href={link.href}
                 onClick={onClose}
                 className={cn(
-                  "block py-5 text-3xl font-serif tracking-tight",
+                  "block py-5 text-3xl font-sans tracking-tight",
                   pathname === link.href ? "text-ink" : "text-ink/80"
                 )}
               >

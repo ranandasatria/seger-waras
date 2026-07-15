@@ -13,12 +13,12 @@ export function Testimonial() {
         {featured && (
           <figure className="mt-6 max-w-4xl">
             <Quote
-              className="text-sage/30 mb-6"
+              className="text-sage/20 mb-6"
               size={48}
               strokeWidth={1}
               aria-hidden
             />
-            <blockquote className="text-2xl md:text-4xl font-serif text-ink leading-[1.2] tracking-tight">
+            <blockquote className="text-2xl md:text-4xl font-sans text-ink leading-[1.2] tracking-tight">
               &ldquo;{featured.quote}&rdquo;
             </blockquote>
             <figcaption className="mt-6 text-sm text-muted">

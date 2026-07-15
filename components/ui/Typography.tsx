@@ -13,7 +13,7 @@ export function Display({ children, className }: { children: ReactNode; classNam
   return (
     <h1
       className={cn(
-        "text-5xl md:text-7xl font-serif leading-[1.05] tracking-tight text-ink",
+        "text-5xl md:text-7xl font-sans leading-[1.05] tracking-tight text-ink",
         className
       )}
     >
@@ -26,7 +26,7 @@ export function H2({ children, className }: { children: ReactNode; className?: s
   return (
     <h2
       className={cn(
-        "text-3xl md:text-5xl font-serif text-ink leading-[1.1] tracking-tight",
+        "text-3xl md:text-5xl font-sans text-ink leading-[1.1] tracking-tight",
         className
       )}
     >

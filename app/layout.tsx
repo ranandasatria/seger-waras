@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ibmPlexSans, ibmPlexMono, instrumentSerif } from "./fonts";
+import { ibmPlexMono } from "./fonts";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html
       lang="id"
-      className={`${ibmPlexSans.variable} ${ibmPlexMono.variable} ${instrumentSerif.variable}`}
+      className={ibmPlexMono.variable}
     >
       <body className="font-sans antialiased">
         <a href="#main" className="skip-link">

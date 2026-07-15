@@ -19,7 +19,7 @@ export type ContactFormPayload = {
 
 export function composeWhatsAppMessage(payload: ContactFormPayload): string {
   const lines = [
-    `Halo Seger Waras,`,
+    `Halo SWARAS Interior,`,
     ``,
     `Saya *${payload.name}* (${payload.email}) ingin berkonsultasi.`,
     ``,

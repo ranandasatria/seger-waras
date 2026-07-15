@@ -23,7 +23,7 @@ export function PlaceholderImage({ ratio = "4/3", label, className }: Placeholde
       role="img"
       aria-label={label ?? "Placeholder image"}
       className={cn(
-        "relative w-full bg-white border border-line overflow-hidden",
+        "relative w-full bg-sage-soft border border-line overflow-hidden",
         "flex items-center justify-center",
         ratioClass[ratio],
         className

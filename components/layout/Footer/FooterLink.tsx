@@ -18,7 +18,7 @@ export function FooterLink({ href, children, className, external }: FooterLinkPr
       target={isExternal ? "_blank" : undefined}
       rel={isExternal ? "noopener noreferrer" : undefined}
       className={cn(
-        "text-canvas/70 hover:text-canvas transition-colors text-sm",
+        "text-muted hover:text-ink transition-colors text-sm",
         className
       )}
     >

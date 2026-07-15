@@ -1,37 +1,37 @@
-import { MessageCircle, MapPin, PencilRuler, Hammer, PartyPopper } from "lucide-react";
+import { MessageCircle, Map, FileText, Hammer, PartyPopper } from "lucide-react";
 import type { ProcessStep } from "./types";
 
 export const processSteps: ProcessStep[] = [
   {
     id: "konsultasi",
     step: 1,
-    title: "Konsultasi Awal",
+    title: "Konsultasi Awal Gratis",
     description:
-      "Sesi 1–2 jam (online atau onsite) untuk menggali kebutuhan, preferensi gaya, dan anggaran Anda.",
+      "Kami mendengarkan kebutuhan, preferensi gaya, dan anggaran Anda tanpa biaya.",
     icon: MessageCircle,
   },
   {
     id: "survey",
     step: 2,
-    title: "Survey & Brief",
+    title: "Survey Lokasi Gratis",
     description:
-      "Kunjungan lokasi, pengukuran, dokumentasi, dan penyusunan brief desain yang terstruktur.",
-    icon: MapPin,
+      "Tim kami datang langsung ke lokasi untuk mengukur, memahami kondisi ruang, dan mendiskusikan solusi terbaik.",
+    icon: Map,
   },
   {
-    id: "konsep",
+    id: "proposal",
     step: 3,
-    title: "Konsep & 3D Render",
+    title: "Proposal & RAB",
     description:
-      "Layout, moodboard, pemilihan material, dan visualisasi 3D fotorealistis untuk direview bersama.",
-    icon: PencilRuler,
+      "Kami menyiapkan proposal desain dan rincian anggaran yang transparan untuk Anda.",
+    icon: FileText,
   },
   {
-    id: "eksekusi",
+    id: "pengerjaan",
     step: 4,
-    title: "Produksi & Eksekusi",
+    title: "Pengerjaan",
     description:
-      "Produksi furniture, instalasi, dan finishing oleh tim lapangan yang diawasi project manager.",
+      "Proses pemasangan dikerjakan oleh tim berpengalaman dengan pengawasan langsung dan laporan berkala kepada klien.",
     icon: Hammer,
   },
   {
@@ -39,7 +39,7 @@ export const processSteps: ProcessStep[] = [
     step: 5,
     title: "Serah Terima",
     description:
-      "Quality check bersama, handover dokumen, dan penjelasan perawatan untuk setiap elemen desain.",
+      "Proyek diserahkan setelah melewati pemeriksaan kualitas bersama klien. Kepuasan Anda adalah standar akhir kami.",
     icon: PartyPopper,
   },
 ];

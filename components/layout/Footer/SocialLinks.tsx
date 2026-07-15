@@ -8,8 +8,8 @@ type Social = {
 
 const socials: Social[] = [
   { label: "Instagram", href: siteConfig.socials.instagram, icon: "instagram" },
-  { label: "TikTok", href: siteConfig.socials.tiktok, icon: "tiktok" },
-  { label: "YouTube", href: siteConfig.socials.youtube, icon: "youtube" },
+  ...(siteConfig.socials.tiktok ? [{ label: "TikTok" as const, href: siteConfig.socials.tiktok, icon: "tiktok" as const }] : []),
+  ...(siteConfig.socials.youtube ? [{ label: "YouTube" as const, href: siteConfig.socials.youtube, icon: "youtube" as const }] : []),
 ];
 
 const InstagramIcon = ({ size = 18 }: { size?: number }) => (
@@ -64,7 +64,7 @@ export function SocialLinks() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={s.label}
-            className="flex items-center justify-center w-10 h-10 rounded-sm border border-canvas/15 text-canvas/70 hover:text-canvas hover:border-canvas/40 transition-colors"
+            className="flex items-center justify-center w-10 h-10 rounded-sm border border-white/15 text-muted hover:text-ink hover:border-white/40 transition-colors"
           >
             {s.icon === "instagram" && <InstagramIcon size={18} />}
             {s.icon === "tiktok" && <TikTokIcon size={18} />}

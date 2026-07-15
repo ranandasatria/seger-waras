@@ -3,12 +3,12 @@ import { Container, Icon, Section, SectionHeader } from "@/components/ui";
 
 export function Process() {
   return (
-    <Section id="proses" className="border-t border-line bg-white">
+    <Section id="proses" className="border-t border-line bg-sage-soft">
       <Container>
         <SectionHeader
-          eyebrow="Proses"
-          title="Lima langkah dari ide hingga ruangan jadi."
-          description="Setiap proyek mengikuti alur yang jelas, dengan titik-titik komunikasi rutin agar Anda selalu tahu perkembangan terbaru."
+          eyebrow="Bagaimana Kami Bekerja"
+          title="Lima langkah dari konsultasi hingga ruang nyata."
+          description="Setiap proyek kami kerjakan dengan alur yang terstruktur dan komunikasi yang transparan di setiap tahap."
         />
         <ol className="border-t border-line">
           {processSteps.map((step) => (
@@ -20,7 +20,7 @@ export function Process() {
                 {String(step.step).padStart(2, "0")}
               </div>
               <div>
-                <h3 className="text-2xl md:text-3xl font-serif text-ink leading-tight">
+                <h3 className="text-2xl md:text-3xl font-sans text-ink leading-tight">
                   {step.title}
                 </h3>
                 <p className="mt-3 text-base text-muted leading-relaxed max-w-2xl">

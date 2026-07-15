@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-sans), ui-sans-serif, system-ui;
-  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular;
-  --font-serif: var(--font-serif), Georgia, serif;
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: var(--font-mono), "Courier New", Courier, monospace;
+  --font-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-  --color-canvas: #FAFAF7;
-  --color-ink: #0E0E0C;
-  --color-muted: #6B6B66;
-  --color-line: #E7E5DF;
-  --color-sage: #5B6B4B;
-  --color-sage-soft: #8B9B7A;
-  --color-clay: #C9B79A;
+  --color-canvas: #1b2a4a;
+  --color-ink: #d9d9d9;
+  --color-muted: #a8b8ce;
+  --color-line: rgba(217, 217, 217, 0.12);
+  --color-sage: #d9d9d9;
+  --color-sage-soft: #253a5a;
+  --color-clay: #2a4060;
   --color-whatsapp: #25D366;
 }
 
@@ -23,13 +23,13 @@
   body {
     background-color: var(--color-canvas);
     color: var(--color-ink);
-    font-family: var(--font-sans), ui-sans-serif, system-ui;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   ::selection {
-    background-color: var(--color-sage);
+    background-color: var(--color-ink);
     color: var(--color-canvas);
   }
 

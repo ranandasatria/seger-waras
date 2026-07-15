@@ -1,47 +1,33 @@
-import { Coffee, Award, Sparkles, ShieldCheck, Clock, Hammer } from "lucide-react";
+import { MessageCircle, Map, Building2, CheckCircle } from "lucide-react";
 import type { ValueProp } from "./types";
 
 export const valueProps: ValueProp[] = [
   {
-    id: "konsultasi-gratis",
-    title: "Konsultasi Gratis",
+    id: "konsultasi-terbuka",
+    title: "Konsultasi Terbuka & Transparan",
     description:
-      "Sesi awal tanpa biaya untuk berdiskusi mengenai kebutuhan, gaya, dan anggaran Anda.",
-    icon: Coffee,
+      "Kami mendiskusikan setiap detail — material, anggaran, dan timeline — secara terbuka sebelum proyek dimulai.",
+    icon: MessageCircle,
+  },
+  {
+    id: "berbasis-lokal",
+    title: "Berbasis di Yogyakarta & Solo Raya",
+    description:
+      "Kami hadir langsung di lokasi proyek — bukan dikelola dari jarak jauh. Setiap tahap pengerjaan dipantau langsung oleh tim kami.",
+    icon: Map,
   },
   {
     id: "pengalaman",
-    title: "10+ Tahun Pengalaman",
+    title: "Residensial & Institusional",
     description:
-      "Tim desainer dan project manager yang sudah menangani ratusan proyek residensial dan komersial.",
-    icon: Award,
+      "Kami telah menangani proyek hunian pribadi hingga ruang kantor instansi dengan standar kualitas yang konsisten.",
+    icon: Building2,
   },
   {
-    id: "3d-realistis",
-    title: "Desain 3D Realistis",
+    id: "hasil-sesuai",
+    title: "Hasil Sesuai Kesepakatan",
     description:
-      "Anda melihat dan merasakan ruangan impian Anda sebelum satu baut pun dipasang.",
-    icon: Sparkles,
-  },
-  {
-    id: "material-premium",
-    title: "Material Premium",
-    description:
-      "Material dan finishing yang kami gunakan dipilih dari supplier terpercaya, dengan garansi keaslian.",
-    icon: ShieldCheck,
-  },
-  {
-    id: "tepat-waktu",
-    title: "Tepat Waktu",
-    description:
-      "Timeline yang jelas di awal proyek dan kami komitmen untuk menyelesaikannya sesuai jadwal.",
-    icon: Clock,
-  },
-  {
-    id: "purna-jual",
-    title: "Garansi Purna Jual",
-    description:
-      "Kami tidak hilang setelah serah terima. Garansi dan dukungan maintenance tersedia untuk Anda.",
-    icon: Hammer,
+      "Komitmen kami adalah menyelesaikan proyek tepat waktu, sesuai desain yang disepakati, dan dalam anggaran yang telah ditentukan.",
+    icon: CheckCircle,
   },
 ];

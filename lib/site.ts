@@ -1,28 +1,29 @@
 import { env } from "./env";
 
 export const siteConfig = {
-  name: "Seger Waras",
+  name: "SWARAS Interior & Architecture",
   shortName: "SW",
-  tagline: "Jasa desain interior yang menyegarkan.",
+  tagline: "Jasa pemasangan interior residensial & institusional.",
   description:
-    "Seger Waras adalah studio desain interior yang membantu Anda menciptakan ruang yang sehat, hangat, dan sesuai karakter Anda.",
+    "SW Architecture & Interior hadir sebagai mitra terpercaya Anda dalam pemasangan interior dan Arsitektur untuk hunian pribadi maupun ruang institusional.",
   url: env.NEXT_PUBLIC_SITE_URL,
   locale: "id-ID",
   ogImage: "/og.png",
   contact: {
     whatsapp: env.NEXT_PUBLIC_WHATSAPP_NUMBER,
-    email: "halo@segerwaras.id",
-    phone: "+62 812 3456 7890",
-    address: "Jl. Contoh No. 123, Jakarta Selatan, Indonesia",
+    email: "halo@swarasinterior.com",
+    phone: "+62 851-5626-5466",
+    address: "Yogyakarta & Surakarta (Solo Raya)",
     hours: "Senin – Sabtu, 09.00 – 18.00 WIB",
   },
   socials: {
-    instagram: "https://instagram.com/segerwaras",
-    tiktok: "https://tiktok.com/@segerwaras",
-    youtube: "https://youtube.com/@segerwaras",
+    instagram: "https://instagram.com/swaras_interior",
+    tiktok: "",
+    youtube: "",
   },
   navLinks: [
     { label: "Beranda", href: "/" },
+    { label: "Layanan", href: "/layanan" },
     { label: "Tentang Kami", href: "/tentang-kami" },
     { label: "Kontak", href: "/kontak" },
   ] as const,

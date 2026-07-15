@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
-import { Container, Display, Eyebrow, Lead, Section } from "@/components/ui";
+import { Story } from "@/components/about/Story";
+import { VisionMission } from "@/components/about/VisionMission";
+import { Stats } from "@/components/about/Stats";
+import { Team } from "@/components/about/Team";
 
 export const metadata: Metadata = {
   title: "Tentang Kami",
-  description: "Cerita, visi, dan tim di balik Seger Waras.",
+  description: "Cerita, filosofi desain, visi, misi, dan tim profesional di balik SWARAS Interior & Architecture.",
 };
 
 export default function TentangKamiPage() {
   return (
-    <Section>
-      <Container>
-        <Eyebrow>Tentang Kami</Eyebrow>
-        <Display className="mt-5">Sedang dibangun.</Display>
-        <Lead className="mt-6 max-w-xl">
-          Halaman ini akan menampilkan cerita, visi & misi, dan tim Seger Waras. Sementara, silakan kembali ke beranda.
-        </Lead>
-      </Container>
-    </Section>
+    <>
+      <Story />
+      <VisionMission />
+      <Stats />
+      <Team />
+    </>
   );
 }

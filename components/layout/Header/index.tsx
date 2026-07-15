@@ -1,44 +1,53 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 import { ButtonLink, Icon } from "@/components/ui";
 import { siteConfig } from "@/lib/site";
-import { cn } from "@/lib/utils";
 import { NavLink } from "./NavLink";
 import { MobileMenu } from "./MobileMenu";
 
 export default function Header() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
-    const onScroll = () => setIsScrolled(window.scrollY > 10);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    if (isMobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [isMobileOpen]);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isMobileOpen) setIsMobileOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [isMobileOpen]);
 
   return (
     <>
-      <header
-        className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-colors duration-300",
-          isScrolled
-            ? "bg-canvas/85 backdrop-blur-md border-b border-line"
-            : "bg-transparent border-b border-transparent"
-        )}
-      >
+      <header className="fixed top-0 left-0 right-0 z-50 bg-canvas/85 backdrop-blur-md border-b border-line">
         <div className="mx-auto max-w-7xl px-6 md:px-10 h-20 flex items-center justify-between">
           <Link
             href="/"
-            className="font-serif text-xl tracking-tight text-ink"
             aria-label={`${siteConfig.name} — Beranda`}
+            className="shrink-0 h-[72px] w-[220px] relative"
           >
-            {siteConfig.name}
+            <Image
+              src="/logosw.jpeg"
+              alt={siteConfig.name}
+              fill
+              className="object-contain object-left"
+              sizes="220px"
+              priority
+            />
           </Link>
 
           <nav className="hidden md:flex items-center gap-10" aria-label="Navigasi utama">

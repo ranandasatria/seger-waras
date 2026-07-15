@@ -6,7 +6,7 @@ export const testimonials: Testimonial[] = [
     name: "Ibu Sari Wibawa",
     role: "Pemilik Rumah, Jakarta",
     quote:
-      "Rumah kami jadi benar-benar mencerminkan keluarga kami. Tim Seger Waras sangat perhatian terhadap detail dan sabar mendengar keinginan kami.",
+      "Rumah kami jadi benar-benar mencerminkan keluarga kami. Tim SWARAS sangat perhatian terhadap detail dan sabar mendengar keinginan kami.",
   },
   {
     id: "andre",
