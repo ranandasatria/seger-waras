@@ -5,10 +5,6 @@ const envSchema = z.object({
     .string()
     .url()
     .default("http://localhost:3000"),
-  NEXT_PUBLIC_WHATSAPP_NUMBER: z
-    .string()
-    .min(8, "Nomor WhatsApp minimal 8 digit")
-    .default("6285156265466"),
   NEXT_PUBLIC_WHATSAPP_DEFAULT_MESSAGE: z
     .string()
     .default("Halo SWARAS Interior, saya tertarik dengan layanan pemasangan interior."),
@@ -19,7 +15,6 @@ const envSchema = z.object({
 
 const parsed = envSchema.safeParse({
   NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
-  NEXT_PUBLIC_WHATSAPP_NUMBER: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER,
   NEXT_PUBLIC_WHATSAPP_DEFAULT_MESSAGE: process.env.NEXT_PUBLIC_WHATSAPP_DEFAULT_MESSAGE,
   NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
   NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,

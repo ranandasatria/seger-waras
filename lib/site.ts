@@ -10,9 +10,9 @@ export const siteConfig = {
   locale: "id-ID",
   ogImage: "/og.png",
   contact: {
-    whatsapp: env.NEXT_PUBLIC_WHATSAPP_NUMBER,
+    whatsapp: "6285123882353",
     email: "halo@swarasinterior.com",
-    phone: "+62 851-5626-5466",
+    phone: "+62 851-2388-2353",
     address: "Yogyakarta & Surakarta (Solo Raya)",
     hours: "Senin – Sabtu, 09.00 – 18.00 WIB",
   },
