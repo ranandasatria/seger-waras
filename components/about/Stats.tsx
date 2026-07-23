@@ -1,9 +1,9 @@
 import { Container, Section } from "@/components/ui";
 
 const stats = [
-  { value: "2016", label: "Tahun Berdiri" },
-  { value: "200+", label: "Proyek Selesai" },
-  { value: "15+", label: "Penghargaan Desain" },
+  { value: "2025", label: "Tahun Berdiri" },
+  { value: "15+", label: "Proyek Selesai" },
+  // { value: "15+", label: "Penghargaan Desain" },
   { value: "100%", label: "Komitmen Kualitas" },
 ];
 
@@ -11,9 +11,9 @@ export function Stats() {
   return (
     <Section id="statistik" className="border-t border-line bg-canvas">
       <Container>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 justify-items-center">
           {stats.map((s, i) => (
-            <div key={i} className="text-center md:text-left">
+            <div key={i} className="text-center">
               <div className="font-mono text-4xl md:text-6xl text-sage tracking-tight font-light leading-none">
                 {s.value}
               </div>
