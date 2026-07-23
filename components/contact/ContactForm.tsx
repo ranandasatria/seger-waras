@@ -8,7 +8,7 @@ import type { ContactFormPayload } from "@/lib/whatsapp";
 export function ContactForm() {
   const [form, setForm] = useState<ContactFormPayload>({
     name: "",
-    email: "",
+    // email: "",
     projectType: "Hunian",
     message: "",
   });
@@ -23,11 +23,11 @@ export function ContactForm() {
       newErrors.name = "Nama lengkap wajib diisi.";
     }
 
-    if (!form.email.trim()) {
-      newErrors.email = "Email wajib diisi.";
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
-      newErrors.email = "Format email tidak valid.";
-    }
+    // if (!form.email.trim()) {
+    //   newErrors.email = "Email wajib diisi.";
+    // } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+    //   newErrors.email = "Format email tidak valid.";
+    // }
 
     if (!form.message.trim()) {
       newErrors.message = "Pesan konsultasi wajib diisi.";
@@ -74,7 +74,7 @@ export function ContactForm() {
         )}
       </div>
 
-      <div>
+      {/* <div>
         <label htmlFor="email" className="block text-xs font-mono uppercase tracking-wider text-ink mb-2">
           Alamat Email *
         </label>
@@ -90,7 +90,7 @@ export function ContactForm() {
         {errors.email && (
           <p className="mt-1.5 text-xs text-red-500 font-mono">{errors.email}</p>
         )}
-      </div>
+      </div> */}
 
       <div>
         <label htmlFor="projectType" className="block text-xs font-mono uppercase tracking-wider text-ink mb-2">

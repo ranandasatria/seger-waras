@@ -12,7 +12,7 @@ export function openWhatsApp(message: string, phone: string = siteConfig.contact
 
 export type ContactFormPayload = {
   name: string;
-  email: string;
+  // email: string;
   projectType: string;
   message: string;
 };
@@ -21,7 +21,7 @@ export function composeWhatsAppMessage(payload: ContactFormPayload): string {
   const lines = [
     `Halo SWARAS Interior,`,
     ``,
-    `Saya *${payload.name}* (${payload.email}) ingin berkonsultasi.`,
+    `Saya *${payload.name}* ingin berkonsultasi.`,
     ``,
     `*Jenis proyek:* ${payload.projectType}`,
     ``,
