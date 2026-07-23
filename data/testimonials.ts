@@ -4,22 +4,22 @@ export const testimonials: Testimonial[] = [
   {
     id: "sari",
     name: "Ibu Sari Wibawa",
-    role: "Pemilik Rumah, Jakarta",
+    role: "Pemilik Rumah, Yogyakarta",
     quote:
       "Rumah kami jadi benar-benar mencerminkan keluarga kami. Tim SWARAS sangat perhatian terhadap detail dan sabar mendengar keinginan kami.",
   },
   {
     id: "andre",
     name: "Mas Andre Kurniawan",
-    role: "Pemilik Kafe, Bandung",
+    role: "Pemilik Perusahaan, Yogyakarta",
     quote:
-      "Konsep kafe kami sekarang jadi salah satu yang paling banyak di-tag di kota ini. Pelanggan betah, dan kami pun bangga menunjukkan ruang ini ke siapapun.",
+      "Konsep kantor kami sekarang jadi semakin nyaman untuk bekerja. Para karyawan betah, dan kami pun bangga menunjukkan ruang ini ke klien kami.",
   },
   {
     id: "lina",
     name: "Ibu Lina Hartono",
-    role: "Pemilik Klinik, Surabaya",
+    role: "Pemilik Rumah, Solo",
     quote:
-      "Prosesnya profesional dari awal sampai serah terima. Hasilnya melebihi ekspektasi kami, dan klinik jadi terasa hangat walau berfungsi sebagai ruang medis.",
+      "Prosesnya profesional dari awal sampai serah terima. Hasilnya melebihi ekspektasi kami, dan rumah jadi terasa hangat untuk kumpul keluarga dan menerima tamu.",
   },
 ];
