@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -14,22 +14,7 @@ export default function Header() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const pathname = usePathname();
 
-  useEffect(() => {
-    if (isMobileOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => { document.body.style.overflow = ""; };
-  }, [isMobileOpen]);
-
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && isMobileOpen) setIsMobileOpen(false);
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [isMobileOpen]);
+  const handleClose = useCallback(() => setIsMobileOpen(false), []);
 
   return (
     <>
@@ -76,7 +61,7 @@ export default function Header() {
         </div>
       </header>
 
-      <MobileMenu isOpen={isMobileOpen} onClose={() => setIsMobileOpen(false)} />
+      <MobileMenu isOpen={isMobileOpen} onClose={handleClose} />
     </>
   );
 }

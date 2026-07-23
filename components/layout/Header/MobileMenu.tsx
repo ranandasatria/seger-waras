@@ -47,7 +47,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       aria-label="Menu navigasi"
       aria-hidden={!isOpen}
       className={cn(
-        "fixed inset-0 z-40 md:hidden bg-canvas flex flex-col transition-opacity duration-300",
+        "fixed inset-0 z-[60] md:hidden bg-canvas flex flex-col transition-opacity duration-300",
         isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
       )}
     >
