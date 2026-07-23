@@ -15,7 +15,7 @@ export default function TentangKamiPage() {
       <Story />
       <VisionMission />
       <Stats />
-      <Team />
+      {/* <Team /> */}
     </>
   );
 }

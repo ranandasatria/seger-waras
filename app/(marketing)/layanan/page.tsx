@@ -26,7 +26,8 @@ export default function LayananPage() {
         <Section
           key={service.id}
           id={service.id}
-          className={index % 2 === 1 ? "border-t border-line bg-white" : "border-t border-line"}
+          // className={index % 2 === 1 ? "border-t border-line bg-white" : "border-t border-line"}
+          className={"border-t border-line"}
         >
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">

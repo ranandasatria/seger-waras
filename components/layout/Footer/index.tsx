@@ -70,7 +70,7 @@ export default function Footer() {
           <p className="text-xs font-mono uppercase tracking-[0.15em] text-muted">
             © {year} {siteConfig.name}. All rights reserved.
           </p>
-          <ul className="flex items-center gap-6">
+          {/* <ul className="flex items-center gap-6">
             {siteConfig.legalLinks.map((link) => (
               <li key={link.href}>
                 <FooterLink href={link.href} className="text-xs font-mono uppercase tracking-[0.15em]">
@@ -78,7 +78,7 @@ export default function Footer() {
                 </FooterLink>
               </li>
             ))}
-          </ul>
+          </ul> */}
         </div>
       </Container>
     </footer>

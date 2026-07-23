@@ -31,7 +31,7 @@ export default function KontakPage() {
         </Container>
       </Section>
 
-      <Section id="peta-lokasi" className="pt-0 pb-20 md:pb-28">
+      {/* <Section id="peta-lokasi" className="pt-0 pb-20 md:pb-28">
         <Container>
           <SectionHeader
             eyebrow="Kunjungi Studio Kami"
@@ -42,7 +42,7 @@ export default function KontakPage() {
             <LocationMap />
           </div>
         </Container>
-      </Section>
+      </Section> */}
     </>
   );
 }
