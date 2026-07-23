@@ -14,7 +14,7 @@ export function Services() {
         <SectionHeader
           eyebrow="Layanan Kami"
           title="Apa yang kami kerjakan."
-          description="SW Architecture & Interior menyediakan layanan pemasangan dan desain interior yang menyeluruh dari elemen dekoratif hingga finishing teknikal untuk hunian residensial maupun ruang institusional."
+          description="Swaras Interior & Architecture menyediakan layanan pemasangan dan desain interior yang menyeluruh dari elemen dekoratif hingga finishing teknikal untuk hunian residensial maupun ruang institusional."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
           {services.map((s) => (

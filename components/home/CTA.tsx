@@ -11,7 +11,7 @@ export function CTA() {
             SIAP MEMULAI PROYEK ANDA?
           </h2>
           <Lead className="mt-6 max-w-xl">
-            Ceritakan kebutuhan ruang Anda kepada kami. Tim SW Architecture & Interior siap membantu Anda dari satu ruangan hingga keseluruhan proyek, residensial maupun institusional. Konsultasi awal gratis.
+            Ceritakan kebutuhan ruang Anda kepada kami. Tim Swaras Interior & Architecture siap membantu Anda dari satu ruangan hingga keseluruhan proyek, residensial maupun institusional. Konsultasi awal gratis.
           </Lead>
           <div className="mt-10 flex flex-wrap gap-3">
             <ButtonLink href={`https://wa.me/${siteConfig.contact.whatsapp}`} size="lg" variant="whatsapp">

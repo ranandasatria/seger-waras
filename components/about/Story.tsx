@@ -27,7 +27,7 @@ export function Story() {
               Kami melayani proyek di Yogyakarta, Surakarta, dan sekitarnya. Kami hadir langsung di lokasi untuk memastikan setiap tahap pengerjaan berjalan sesuai rencana dan standar kualitas yang telah disepakati.
             </p>
             <p>
-              <strong className="text-ink font-medium">Dari konsep hingga ruang nyata, Swaras Architecture & Interior siap mewujudkan ruang impian Anda.</strong>
+              <strong className="text-ink font-medium">Dari konsep hingga ruang nyata, Swaras Interior & Architecture siap mewujudkan ruang impian Anda.</strong>
             </p>
           </div>
         </div>

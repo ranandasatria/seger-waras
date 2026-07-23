@@ -19,7 +19,7 @@ export function Hero() {
               <span className="text-white/90">SEPENUH HATI</span>
             </h1>
             <Lead className="mt-6 max-w-xl">
-              SW Architecture & Interior hadir sebagai mitra terpercaya Anda dalam pemasangan interior dan Arsitektur untuk hunian pribadi maupun ruang institusional. Kami siap hadir mewujudkan imajinasi dan impian Anda.
+              Swaras Interior & Architecture hadir sebagai mitra terpercaya Anda dalam pemasangan interior dan arsitektur untuk hunian pribadi maupun ruang institusional. Kami siap hadir mewujudkan imajinasi dan impian Anda.
             </Lead>
             <div className="mt-10 flex flex-wrap gap-3">
               <ButtonLink href="/kontak" size="lg">
@@ -44,7 +44,7 @@ export function Hero() {
 
         <div className="mt-20 md:mt-28 border-t border-line pt-12 md:pt-16">
           <p className="text-xs font-mono uppercase tracking-[0.2em] text-sage mb-8">
-            Alasan Memilih Kami
+            Mengapa Klien Mempercayai Kami
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-10">
             {valueProps.map((v) => (

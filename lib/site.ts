@@ -5,7 +5,7 @@ export const siteConfig = {
   shortName: "SW",
   tagline: "Jasa pemasangan interior residensial & institusional.",
   description:
-    "SW Architecture & Interior hadir sebagai mitra terpercaya Anda dalam pemasangan interior dan Arsitektur untuk hunian pribadi maupun ruang institusional.",
+    "Swaras Interior & Architecture hadir sebagai mitra terpercaya Anda dalam pemasangan interior dan Arsitektur untuk hunian pribadi maupun ruang institusional.",
   url: env.NEXT_PUBLIC_SITE_URL,
   locale: "id-ID",
   ogImage: "/og.png",
